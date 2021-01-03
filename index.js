@@ -29,8 +29,6 @@ function pressA() {
     })
 }
 
-pressA();
-
 function gameOver() {
     $("#level-title").text("Game Over");
     const sound = new Audio("sounds/wrong.mp3");
@@ -74,3 +72,5 @@ $(".btn").on("click", function() {
 function nextLevel() {
     $("#level-title").text("Level " + gamePattern.length)
 }
+
+pressA();
